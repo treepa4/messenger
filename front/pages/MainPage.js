@@ -5,14 +5,14 @@ import { commonStyles, palette } from '../assets/CommonStyles.js'
 
 export function MainPage() {
   return (
-    <View style={{flex: 1, flexDirection: 'row'}}>
+    <View style={commonStyles.mainView}>
       
-      <View style={{display: 'flex', backgroundColor: '#808080', width: '25%', height: '100%', alignSelf: 'left'}}>
+      <View style={styles.sidePanel}>
         {/* TODO */}
         <Text>Side panel</Text>
       </View>
 
-      <View style={{backgroundColor: '#404040', width: '75%', height: '100%'}}>
+      <View style={styles.chatArea}>
         {/* TODO */}
         <Text>Chat area</Text>
       </View>
@@ -24,5 +24,17 @@ export function MainPage() {
 
 
 const styles = StyleSheet.create({
-  
+  sidePanel: {
+    display: 'flex',
+    backgroundColor: palette.darkMain,
+    width: '40%',
+    height: '100%',
+  },
+
+  chatArea: {
+    backgroundColor: palette.foreground,
+    display: 'flex',
+    width: '60%',
+    height: '100%',
+  },
 });

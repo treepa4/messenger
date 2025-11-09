@@ -10,7 +10,7 @@ export function SignForm(setLoggedIn) {
   const [isSignUpForm, setSignUpForm] = useState(false);
   
   return (
-    <View style={commonStyles.menuMain}>
+    <View style={commonStyles.menuView}>
       <View style={commonStyles.menuContainer}>
 
         <Text style={[commonStyles.text, commonStyles.header1]}>

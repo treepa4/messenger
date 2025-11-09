@@ -1,26 +1,15 @@
 import { StyleSheet } from "react-native"
 
-export const palettes = {
-  orange: {
-    main:         '#ffb268',
-    darkerMain:   '#eb9e68',
-    text:         '#000000',
-    textMedium:   '#777777',
-    textInverted: '#ffffff',
-    textButton:   '#000000',
-  },
-
-  purple: {
-    main:         '#7e5dea',
-    darkerMain:   '#6a49d6',
-    text:         '#000000',
-    textMedium:   '#777777',
-    textInverted: '#ffffff',
-    textButton:   '#ffffff',
-  },
+export let palette = {
+  main:         '#7e5dea',
+  darkerMain:   '#6a49d6',
+  darkMain:     '#0d0c1c',
+  foreground:   '#ffffff',
+  text:         '#000000',
+  textMedium:   '#777777',
+  textInverted: '#ffffff',
+  textButton:   '#ffffff',
 };
-
-export let palette = palettes.purple;
 
 export const commonStyles = StyleSheet.create({
   text: {
@@ -50,7 +39,7 @@ export const commonStyles = StyleSheet.create({
     marginBottom: 5,
   },
 
-  menuMain: {
+  menuView: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
@@ -60,5 +49,10 @@ export const commonStyles = StyleSheet.create({
     maxWidth: '400px',
     width: '70%',
     minWidth: '300px',
+  },
+
+  mainView: {
+    flex: 1,
+    flexDirection: 'row',
   },
 });
